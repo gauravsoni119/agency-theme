@@ -184,6 +184,15 @@ input[type=submit]:hover,  input[type=submit]:active{
     width: auto;
     float: left;
 }
+
+.logo-responsive {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+/*-----------Main nav------------*/
 .main-nav {
     float: right;
     list-style: none;
@@ -193,7 +202,7 @@ input[type=submit]:hover,  input[type=submit]:active{
     display: inline-block;
     margin-left: 40px;
 }
-.main-nav li a:link, .main-nav li a:visited{
+.main-nav li a:link, .main-nav li a:visited {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 90%;
@@ -205,6 +214,51 @@ input[type=submit]:hover,  input[type=submit]:active{
 
 .main-nav li a:hover, .main-nav li a:focus{
     border-bottom: 2px solid #16a085;
+}
+
+/*-----------Sticky nav------------*/
+
+.main-nav {
+    margin-top: 21px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(256, 256, 256, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+.sticky .logo-responsive {
+    display: block;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    color: #555;
+    padding: 16px 0;
+}
+
+/*--------MOBILE NAV--------*/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon:link, .mobile-nav-icon:visited {
+    border-bottom: 0;
+}
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
 }
 
 /*--------------------------------------------------------------------*/

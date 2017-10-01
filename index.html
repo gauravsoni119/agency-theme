@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="vendor/css/Grid.css">
     <link rel="stylesheet" href="vendor/css/ionicons.min.css">
     <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
 </head>
 
@@ -18,21 +19,25 @@
         <nav>
             <div class="row">
                 <img src="resources/img/logo.png" alt="logo" class="logo">
-                <ul class="main-nav">
-                    <li><a href="#">menu1</a></li>
-                    <li><a href="#">menu2</a></li>
-                    <li><a href="#">menu3</a></li>
-                    <li><a href="#">menu4</a></li>
+                <img src="resources/img/logo.png" alt="logo" class="logo-responsive">
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#section-1">menu1</a></li>
+                    <li><a href="#section-2">menu2</a></li>
+                    <li><a href="#section-3">menu3</a></li>
+                    <li><a href="#section-4">menu4</a></li>
                 </ul>
+                <a href="#" class="mobile-nav-icon">
+                    <i class="ion-navicon-round js--nav-icon"></i>
+                </a>
             </div>
         </nav>
         <div class="action-text">
             <h1>Lorem ipsum dolor</h1><br>
             <h1>sed do eiusmod tempor incididunt ut</h1>
-            <a class="btn btn-ghost" href="#">Action Button</a>
+            <a class="btn btn-ghost js--scroll-to-section-1" href="#">Action Button</a>
         </div>
     </header>
-    <section class="feature-1">
+    <section class="feature-1 js--section-1" id="section-1">
         <div class="row">
             <h2>Ut vel quem aeque &mdash; tempor</h2>
             <p class="long-copy">
@@ -75,7 +80,7 @@
             </div>
         </div>
     </section>
-    <section class="feature-2">
+    <section class="feature-2" id="section-2">
         <ul class="img-showcase clearfix">
             <li>
                 <figure class="nature-photo">
@@ -121,7 +126,7 @@
             </li>
         </ul>
     </section>
-    <section class="feature-testimonials">
+    <section class="feature-testimonials" id="section-3">
         <div class="row">
             <h2>Nam ne essent doctus appetere</h2>
         </div>
@@ -149,7 +154,7 @@
             </div>
         </div>
     </section>
-    <section class="section-form">
+    <section class="section-form" id="section-4">
         <div class="row">
             <h2>We're happy to hear from you</h2>
         </div>
@@ -234,6 +239,12 @@
             <p>Copyright &copy 2017. Designed by Gaurav Soni</p>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <script type="text/javascript" src="vendor/js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="resources/js/script.js"></script>
 </body>
 
 </html>
