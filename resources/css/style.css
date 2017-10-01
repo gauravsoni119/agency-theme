@@ -6,11 +6,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-html {
+html, body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', 'sans-serif';
-    font-weight: 300;
+    font-weight: 300px;
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
@@ -23,15 +23,29 @@ html {
     max-width: 1140px;
     margin: 0 auto;
 }
+
 section {
     padding: 80px 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
 }
 
 /*--------------------------------------------------------------------*/
 /* HEADER */
 /*--------------------------------------------------------------------*/
 header {
-    background-image: linear-gradient(rgba(97, 89, 89, 0.7), rgba(97, 89, 89, 0.7)), url('../img/header.jpg');
+    background-image: linear-gradient(rgba(97, 89, 89, 0.7), rgba(97, 89, 89, 0.7)), url('./img/header.jpg');
+    background-attachment: fixed;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -144,7 +158,7 @@ h3 {
     opacity: 1;
 }
 /*--------BUTTONS--------*/
-.btn:link, .btn:visited {
+.btn:link, .btn:visited, input[type=submit] {
     display: inline-block;
     padding: 20px 40px;
     font-weight: 300;
@@ -159,6 +173,10 @@ h3 {
 }
 .btn-ghost:hover, .btn-ghost:focus {
     background-color: #16a085;
+}
+
+input[type=submit]:hover,  input[type=submit]:active{
+    background-color: #187C68;
 }
 
 .logo {
@@ -194,4 +212,78 @@ h3 {
 /*--------------------------------------------------------------------*/
 .feature-1 .long-copy {
     margin-bottom: 40px;
+}
+
+/*--------------------------------------------------------------------*/
+/* SECTION - 3 */
+/*--------------------------------------------------------------------*/
+.feature-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./img/testimonial.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 400%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/*--------------------------------------------------------------------*/
+/* FORM */
+/*--------------------------------------------------------------------*/
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+input[type=submit] {
+    background-color: #16a085;
+    border: 1px solid #16a085;
+    color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+*:focus {
+    outline: none;
 }
